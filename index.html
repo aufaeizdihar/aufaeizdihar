@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aufa Eizdihar — Student · Consultant · Essayist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper:     #EFE9DD;
+      --paperDeep: #E5DDCB;
+      --paperWarm: #F4EFE3;
+      --navy:      #0B2275;
+      --navyDeep:  #081859;
+      --ink:       #171614;
+      --rust:      #C2553A;
+      --ochre:     #A98A4B;
+      --sage:      #5C7349;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* ─── field pattern ─── */
+    body::before {
+      content: "";
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'420'%20height%3D'420'%20viewBox%3D'0%200%20420%20420'%3E%3Cg%20fill%3D'none'%20stroke%3D'%230B2275'%20stroke-width%3D'0.7'%20opacity%3D'0.10'%20font-family%3D'Georgia%2C%20serif'%20font-size%3D'13'%3E%3Cellipse%20cx%3D'62'%20cy%3D'58'%20rx%3D'34'%20ry%3D'14'%2F%3E%3Cellipse%20cx%3D'62'%20cy%3D'58'%20rx%3D'14'%20ry%3D'6'%2F%3E%3Cline%20x1%3D'28'%20y1%3D'58'%20x2%3D'96'%20y2%3D'58'%2F%3E%3Ctext%20x%3D'28'%20y%3D'90'%20font-style%3D'italic'%20fill%3D'%230B2275'%3Etokamak%3C%2Ftext%3E%3Cg%20transform%3D'translate(220%2C40)'%3E%3Cline%20x1%3D'0'%20y1%3D'60'%20x2%3D'80'%20y2%3D'0'%2F%3E%3Cline%20x1%3D'0'%20y1%3D'0'%20x2%3D'80'%20y2%3D'60'%2F%3E%3Cline%20x1%3D'-4'%20y1%3D'62'%20x2%3D'86'%20y2%3D'62'%20stroke-dasharray%3D'2%203'%2F%3E%3Cline%20x1%3D'-2'%20y1%3D'-4'%20x2%3D'-2'%20y2%3D'66'%20stroke-dasharray%3D'2%203'%2F%3E%3Ctext%20x%3D'86'%20y%3D'8'%20font-style%3D'italic'%20fill%3D'%230B2275'%3EP%3C%2Ftext%3E%3Ctext%20x%3D'84'%20y%3D'62'%20font-style%3D'italic'%20fill%3D'%230B2275'%3EQ%3C%2Ftext%3E%3C%2Fg%3E%3Cg%20transform%3D'translate(345%2C160)'%3E%3Ccircle%20cx%3D'0'%20cy%3D'0'%20r%3D'3'%20fill%3D'%230B2275'%2F%3E%3Cellipse%20cx%3D'0'%20cy%3D'0'%20rx%3D'30'%20ry%3D'12'%2F%3E%3Cellipse%20cx%3D'0'%20cy%3D'0'%20rx%3D'30'%20ry%3D'12'%20transform%3D'rotate(60)'%2F%3E%3Cellipse%20cx%3D'0'%20cy%3D'0'%20rx%3D'30'%20ry%3D'12'%20transform%3D'rotate(-60)'%2F%3E%3C%2Fg%3E%3Cg%20transform%3D'translate(40%2C200)'%3E%3Ctext%20x%3D'0'%20y%3D'0'%20font-size%3D'56'%20font-style%3D'italic'%20fill%3D'%230B2275'%3E%E2%88%AB%3C%2Ftext%3E%3Ctext%20x%3D'38'%20y%3D'-22'%20font-size%3D'10'%20font-style%3D'italic'%20fill%3D'%230B2275'%3E%E2%88%9E%3C%2Ftext%3E%3Ctext%20x%3D'30'%20y%3D'14'%20font-size%3D'10'%20fill%3D'%230B2275'%3E0%3C%2Ftext%3E%3C%2Fg%3E%3Cg%20transform%3D'translate(140%2C240)'%3E%3Cpath%20d%3D'M%200%2C20%20Q%2010%2C0%2020%2C20%20T%2040%2C20%20T%2060%2C20%20T%2080%2C20%20T%20100%2C20'%2F%3E%3Cpath%20d%3D'M%200%2C20%20Q%2010%2C40%2020%2C20%20T%2040%2C20%20T%2060%2C20%20T%2080%2C20%20T%20100%2C20'%2F%3E%3Ctext%20x%3D'0'%20y%3D'52'%20font-style%3D'italic'%20fill%3D'%230B2275'%3Esolenoid%3C%2Ftext%3E%3C%2Fg%3E%3Cg%20transform%3D'translate(290%2C240)'%3E%3Cline%20x1%3D'0'%20y1%3D'0'%20x2%3D'0'%20y2%3D'40'%2F%3E%3Crect%20x%3D'-4'%20y%3D'8'%20width%3D'8'%20height%3D'22'%20fill%3D'%23EFE9DD'%20stroke%3D'%230B2275'%2F%3E%3Cline%20x1%3D'14'%20y1%3D'4'%20x2%3D'14'%20y2%3D'44'%2F%3E%3Crect%20x%3D'10'%20y%3D'14'%20width%3D'8'%20height%3D'18'%20fill%3D'%230B2275'%20opacity%3D'0.6'%2F%3E%3Cline%20x1%3D'28'%20y1%3D'-4'%20x2%3D'28'%20y2%3D'38'%2F%3E%3Crect%20x%3D'24'%20y%3D'4'%20width%3D'8'%20height%3D'28'%20fill%3D'%23EFE9DD'%20stroke%3D'%230B2275'%2F%3E%3Cline%20x1%3D'42'%20y1%3D'2'%20x2%3D'42'%20y2%3D'40'%2F%3E%3Crect%20x%3D'38'%20y%3D'10'%20width%3D'8'%20height%3D'20'%20fill%3D'%230B2275'%20opacity%3D'0.6'%2F%3E%3Ctext%20x%3D'0'%20y%3D'66'%20font-style%3D'italic'%20fill%3D'%230B2275'%3Eprice%20action%3C%2Ftext%3E%3C%2Fg%3E%3Cg%20transform%3D'translate(50%2C330)'%3E%3Ctext%20x%3D'0'%20y%3D'0'%20font-size%3D'15'%20font-style%3D'italic'%20fill%3D'%230B2275'%3En%20%CF%84%20T%20%3D%203%20%C3%97%2010%C2%B9%E2%81%B5%3C%2Ftext%3E%3Ctext%20x%3D'0'%20y%3D'18'%20font-size%3D'10'%20fill%3D'%230B2275'%3ELawson%20criterion%3C%2Ftext%3E%3C%2Fg%3E%3Cg%20transform%3D'translate(220%2C330)'%3E%3Cpath%20d%3D'M%200%2C20%20L%2020%2C0%20L%2060%2C0%20L%2080%2C20%20L%2060%2C40%20L%2020%2C40%20Z'%2F%3E%3Cline%20x1%3D'40'%20y1%3D'-6'%20x2%3D'40'%20y2%3D'46'%20stroke-dasharray%3D'2%202'%2F%3E%3Ctext%20x%3D'0'%20y%3D'62'%20font-style%3D'italic'%20fill%3D'%230B2275'%3Edivertor%3C%2Ftext%3E%3C%2Fg%3E%3Ctext%20x%3D'340'%20y%3D'340'%20font-size%3D'42'%20font-style%3D'italic'%20fill%3D'%230B2275'%20opacity%3D'0.6'%3E%CE%A3%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+      background-size: 420px 420px;
+      opacity: 0.85;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .site { position: relative; z-index: 1; max-width: 1280px; margin: 0 auto; }
+
+    /* ─── reveal animations ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    /* ─── nav ─── */
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 22px 48px; border-bottom: 1px solid #0B227533;
+      background: #EFE9DDcc; backdrop-filter: blur(4px);
+      position: sticky; top: 0; z-index: 100;
+      transition: box-shadow .3s;
+    }
+    .nav.scrolled { box-shadow: 0 2px 20px #0B22750f; }
+    .nav .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .nav .brand .mark {
+      width: 32px; height: 32px; background: var(--navy); color: var(--paper);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Newsreader', serif; font-size: 16px; font-style: italic;
+      flex-shrink: 0;
+    }
+    .nav .brand .name { font-family: 'Newsreader', serif; font-size: 20px; color: var(--navy); font-weight: 500; letter-spacing: -.01em; }
+    .nav .brand .name em { font-style: italic; font-weight: 400; }
+    .nav .brand .role { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #17161488; letter-spacing: .06em; border-left: 1px solid #0B227533; padding-left: 12px; margin-left: 8px; }
+    .nav .links { display: flex; gap: 6px; }
+    .nav .links a { color: #171614cc; text-decoration: none; padding: 8px 14px; font-size: 13px; border-radius: 2px; cursor: pointer; transition: color .15s; }
+    .nav .links a:hover { color: var(--navy); }
+    .nav .links a.on { color: var(--navy); font-weight: 500; }
+    .nav .links a.on::before { content: "·"; color: var(--rust); font-weight: 700; margin-right: 4px; }
+    .nav .live { display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #17161488; letter-spacing: .06em; }
+    .nav .live .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--sage); box-shadow: 0 0 0 3px #5C734933; animation: pulse 2.4s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { box-shadow: 0 0 0 3px #5C734933; } 50% { box-shadow: 0 0 0 6px #5C734911; } }
+
+    /* hamburger */
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--navy); border-radius: 2px; transition: transform .3s, opacity .3s; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* mobile menu overlay */
+    .mobile-menu {
+      display: none; position: fixed; inset: 0; background: var(--navy); z-index: 99;
+      flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+      opacity: 0; transition: opacity .3s;
+    }
+    .mobile-menu.open { opacity: 1; }
+    .mobile-menu a {
+      font-family: 'Newsreader', serif; font-size: 48px; color: var(--paper);
+      text-decoration: none; font-weight: 400; letter-spacing: -.02em;
+      line-height: 1.1; transition: color .2s;
+    }
+    .mobile-menu a em { font-style: italic; color: var(--ochre); }
+    .mobile-menu a:hover { color: var(--ochre); }
+    .mobile-menu .m-contact {
+      margin-top: 24px; font-family: 'JetBrains Mono', monospace;
+      font-size: 12px; color: #ffffff66; letter-spacing: .08em;
+    }
+
+    /* ─── ticker ─── */
+    .ticker { background: var(--navy); color: var(--paper); font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .08em; padding: 8px 0; overflow: hidden; white-space: nowrap; }
+    .ticker-track { display: inline-flex; animation: ticker 40s linear infinite; }
+    .ticker:hover .ticker-track { animation-play-state: paused; }
+    .ticker-track span { padding: 0 24px; flex-shrink: 0; }
+    .ticker-track em { color: var(--rust); font-style: normal; margin-right: 6px; }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* ─── hero ─── */
+    .hero { padding: 64px 48px 48px; display: grid; grid-template-columns: 1fr 360px; gap: 48px; align-items: end; border-bottom: 1px solid #0B227522; }
+    .hero .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--rust); letter-spacing: .14em; margin-bottom: 20px; display: flex; gap: 12px; align-items: center; }
+    .hero .eyebrow::before { content: "§"; font-family: 'Newsreader', serif; font-style: italic; font-size: 16px; }
+    .hero h1 { font-family: 'Newsreader', serif; font-size: clamp(60px, 8.5vw, 108px); line-height: .92; color: var(--navy); font-weight: 400; letter-spacing: -.025em; }
+    .hero h1 em { font-style: italic; color: var(--ink); }
+    .hero h1 .ix { display: inline-block; vertical-align: 22px; font-size: 13px; font-family: 'JetBrains Mono', monospace; color: var(--rust); font-style: normal; letter-spacing: .06em; margin-right: 4px; }
+    .hero h1 .amp { font-style: italic; color: var(--rust); }
+    .type-cursor {
+      display: inline-block;
+      color: var(--rust);
+      font-style: normal;
+      margin-left: 2px;
+      animation: typeBlink 0.75s step-end infinite;
+      transition: opacity 1.2s ease;
+    }
+    @keyframes typeBlink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
+    }
+    .hero .hand-note { font-family: 'Caveat', cursive; color: var(--rust); font-size: 22px; line-height: 1.1; transform: rotate(-3deg); display: inline-block; margin-top: 18px; }
+    .hero .hand-note .arrow { display: inline-block; transform: rotate(35deg); margin-right: 6px; }
+    .hero .right { display: flex; flex-direction: column; gap: 14px; }
+    .hero .portrait { width: 360px; height: 440px; border: 1px solid #0B227533; background: var(--paperDeep); overflow: hidden; cursor: zoom-in; }
+    .hero .portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; transition: transform .4s ease; }
+    .hero .portrait:hover img { transform: scale(1.03); }
+    .hero .portrait-cap { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #17161488; letter-spacing: .08em; display: flex; justify-content: space-between; }
+    .hero .portrait-cap em { font-family: 'Newsreader', serif; font-style: italic; font-size: 12px; color: var(--navy); letter-spacing: 0; }
+
+    /* hero cta row */
+    .hero-ctas { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+    .btn-primary {
+      font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: .08em;
+      padding: 12px 24px; background: var(--navy); color: var(--paper);
+      border: none; cursor: pointer; text-decoration: none; display: inline-block;
+      transition: background .2s, transform .15s;
+    }
+    .btn-primary:hover { background: var(--navyDeep); transform: translateY(-1px); }
+    .btn-outline {
+      font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: .08em;
+      padding: 12px 24px; background: transparent; color: var(--navy);
+      border: 1px solid var(--navy); cursor: pointer; text-decoration: none; display: inline-block;
+      transition: background .2s, color .2s, transform .15s;
+    }
+    .btn-outline:hover { background: var(--navy); color: var(--paper); transform: translateY(-1px); }
+
+    /* ─── meter ─── */
+    .meter { display: grid; grid-template-columns: repeat(5, 1fr); border-bottom: 1px solid #0B227522; }
+    .meter > div { padding: 16px 24px; border-right: 1px solid #0B227522; }
+    .meter > div:last-child { border-right: 0; }
+    .meter .lab { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: #17161466; margin-bottom: 6px; }
+    .meter .val { font-family: 'Newsreader', serif; font-size: 24px; color: var(--navy); line-height: 1; letter-spacing: -.01em; }
+    .meter .val em { font-style: italic; color: var(--rust); }
+    .meter .sub { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #17161488; margin-top: 4px; }
+
+    /* ─── section heading ─── */
+    .sec-h { display: grid; grid-template-columns: 80px 1fr 200px; gap: 24px; padding: 56px 48px 20px; align-items: baseline; }
+    .sec-h .ix { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--rust); letter-spacing: .06em; }
+    .sec-h h2 { font-family: 'Newsreader', serif; font-size: clamp(34px, 4vw, 54px); color: var(--navy); font-weight: 400; letter-spacing: -.02em; line-height: 1; }
+    .sec-h h2 em { font-style: italic; }
+    .sec-h h2 .accent { color: var(--rust); }
+    .sec-h .desc { font-size: 13px; color: #171614aa; line-height: 1.5; font-style: italic; font-family: 'Newsreader', serif; }
+
+    /* ─── feature ─── */
+    .feature { display: grid; grid-template-columns: 1.3fr 1fr; border-top: 1px solid #0B227522; border-bottom: 1px solid #0B227522; }
+    .feature .photo { border-right: 1px solid #0B227522; background: var(--paperDeep); position: relative; min-height: 480px; display: flex; align-items: stretch; overflow: hidden; }
+    .feature .photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; cursor: zoom-in; }
+    .feature .photo:hover img { transform: scale(1.02); }
+    .feature .photo .img-slot { width: 100%; min-height: 480px; background: linear-gradient(135deg, var(--paperDeep) 0%, #d4cbb8 100%); display: flex; align-items: center; justify-content: center; flex: 1; }
+    .feature .photo .img-slot .ph-inner { text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #17161444; letter-spacing: .1em; padding: 20px; line-height: 2; }
+    .feature .photo .stamp { position: absolute; top: 14px; left: 14px; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--paper); background: var(--navy); padding: 4px 8px; letter-spacing: .1em; z-index: 2; }
+    .feature .photo .corner-cap { position: absolute; bottom: 14px; right: 14px; font-family: 'Caveat', cursive; color: var(--rust); font-size: 18px; background: var(--paper); padding: 4px 10px; transform: rotate(-2deg); z-index: 2; border: 1px dashed #C2553A55; }
+    .feature .copy { padding: 36px; display: flex; flex-direction: column; justify-content: space-between; min-height: 480px; }
+    .feature .copy .kicker { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--rust); margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+    .feature .copy .kicker::after { content: ""; flex: 1; height: 1px; background: #0B227533; }
+    .feature .copy h3 { font-family: 'Newsreader', serif; font-size: 44px; color: var(--navy); font-weight: 400; line-height: 1.05; margin-bottom: 18px; letter-spacing: -.015em; }
+    .feature .copy h3 em { font-style: italic; }
+    .feature .copy .lede { font-family: 'Newsreader', serif; font-size: 18px; line-height: 1.5; color: var(--ink); margin-bottom: 24px; }
+    .feature .copy .specs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px 24px; font-family: 'JetBrains Mono', monospace; font-size: 11px; border-top: 1px solid #0B227533; padding-top: 16px; }
+    .feature .copy .specs .k { color: #17161466; }
+    .feature .copy .specs .v { color: var(--navy); font-weight: 600; }
+    .feature .copy .cta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--navy); border-bottom: 1px solid var(--navy); display: inline-block; padding-bottom: 2px; margin-top: 18px; letter-spacing: .04em; align-self: flex-start; text-decoration: none; transition: color .15s, border-color .15s; cursor: pointer; }
+    .feature .copy .cta:hover { color: var(--rust); border-bottom-color: var(--rust); }
+
+    /* ─── before/after strip ─── */
+    .before-after { display: grid; grid-template-columns: 1fr 1fr 1fr; border-bottom: 1px solid #0B227522; }
+    .ba-cell { position: relative; overflow: hidden; aspect-ratio: 4/3; border-right: 1px solid #0B227522; cursor: zoom-in; }
+    .ba-cell:last-child { border-right: 0; }
+    .ba-cell img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(.96); transition: transform .4s ease, filter .3s; }
+    .ba-cell:hover img { transform: scale(1.04); filter: brightness(1.03); }
+    .ba-cell .ba-label { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, #0B227599); padding: 28px 14px 10px; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--paper); letter-spacing: .1em; text-transform: uppercase; pointer-events: none; }
+
+    /* ─── app screenshot strip ─── */
+    .app-strip { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid #0B227522; background: var(--paperDeep); }
+    .app-strip .app-cell { border-right: 1px solid #0B227522; position: relative; overflow: hidden; cursor: zoom-in; }
+    .app-strip .app-cell:last-child { border-right: 0; }
+    .app-strip .app-cell img { width: 100%; display: block; aspect-ratio: 9/16; object-fit: cover; object-position: top; transition: transform .4s ease; }
+    .app-strip .app-cell:hover img { transform: scale(1.03); }
+    .app-strip .app-cell .screen-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px 12px 10px; background: linear-gradient(transparent, #00000055); font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--paper); letter-spacing: .1em; text-transform: uppercase; pointer-events: none; }
+
+    /* ─── essays/projects grid ─── */
+    .essays-row { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid #0B227522; }
+    .essay { border-right: 1px solid #0B227522; padding: 24px 24px 28px; cursor: pointer; transition: background .2s; }
+    .essay:hover { background: var(--paperWarm); }
+    .essay:last-child { border-right: 0; }
+    .essay .photo { aspect-ratio: 5/4; background: var(--paperDeep); margin-bottom: 18px; position: relative; overflow: hidden; }
+    .essay .photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s ease; }
+    .essay:hover .photo img { transform: scale(1.04); }
+    .essay .photo .ph { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #17161444; letter-spacing: .1em; text-align: center; }
+    .essay .photo .ix-tag { position: absolute; top: 10px; left: 10px; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--paper); background: var(--navy); padding: 3px 8px; letter-spacing: .08em; z-index: 2; }
+    .essay .meta-line { display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #17161488; letter-spacing: .06em; margin-bottom: 10px; }
+    .essay .meta-line .topic { color: var(--rust); }
+    .essay h4 { font-family: 'Newsreader', serif; font-size: 26px; color: var(--navy); font-weight: 400; line-height: 1.1; margin-bottom: 10px; letter-spacing: -.01em; }
+    .essay h4 em { font-style: italic; }
+    .essay p { font-size: 14px; line-height: 1.55; color: #171614cc; }
+    .essay .status-tag { display: inline-block; margin-top: 12px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .1em; padding: 3px 8px; border: 1px solid currentColor; }
+    .essay .status-tag.wip { color: var(--ochre); }
+    .essay .status-tag.done { color: var(--sage); }
+    .essay .more { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--navy); margin-top: 12px; letter-spacing: .04em; display: block; }
+    .essay .more::after { content: " →"; color: var(--rust); }
+
+    /* ─── skills band ─── */
+    .practice { display: grid; grid-template-columns: 1fr 1fr 1fr; border-top: 1px solid #0B227522; border-bottom: 1px solid #0B227522; background: var(--paperWarm); }
+    .practice > div { padding: 32px 28px; border-right: 1px solid #0B227522; }
+    .practice > div:last-child { border-right: 0; }
+    .practice .num { font-family: 'Newsreader', serif; font-style: italic; font-size: 48px; color: var(--rust); line-height: .9; margin-bottom: 8px; }
+    .practice h4 { font-family: 'Newsreader', serif; font-size: 26px; color: var(--navy); font-weight: 400; margin-bottom: 12px; }
+    .practice h4 em { font-style: italic; }
+    .practice p { font-size: 13px; line-height: 1.6; color: #171614cc; margin-bottom: 14px; }
+    .practice .tags { display: flex; flex-wrap: wrap; gap: 6px; border-top: 1px dashed #0B227544; padding-top: 12px; }
+    .practice .tags span { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .08em; color: var(--navy); border: 1px solid #0B227533; padding: 3px 8px; transition: background .15s, color .15s; cursor: default; }
+    .practice .tags span:hover { background: var(--navy); color: var(--paper); }
+
+    /* ─── SPM band ─── */
+    .spm-band { background: var(--navy); padding: 36px 48px; }
+    .spm-band .spm-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }
+    .spm-band .spm-head h3 { font-family: 'Newsreader', serif; font-size: 32px; color: var(--paper); font-weight: 400; }
+    .spm-band .spm-head h3 em { font-style: italic; color: var(--ochre); }
+    .spm-band .spm-head .meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #ffffff66; letter-spacing: .08em; }
+    .spm-extras { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #ffffff66; letter-spacing: .06em; }
+    .spm-extras span { color: var(--ochre); }
+
+    /* ─── now / journal ─── */
+    .now-section { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #0B227522; }
+    .now-col { padding: 36px; border-right: 1px solid #0B227522; }
+    .now-col:last-child { border-right: 0; background: var(--navy); color: var(--paper); }
+    .now-col h3 { font-family: 'Newsreader', serif; font-size: 36px; font-weight: 400; margin-bottom: 16px; letter-spacing: -.015em; line-height: 1; }
+    .now-col h3 em { font-style: italic; color: var(--rust); }
+    .now-col:last-child h3 em { color: #ffffff88; }
+    .now-col ul { list-style: none; }
+    .now-col li { padding: 12px 0; border-bottom: 1px dashed #0B227533; display: grid; grid-template-columns: 60px 1fr; gap: 14px; font-size: 14px; line-height: 1.5; }
+    .now-col:last-child li { border-bottom-color: #ffffff22; color: #ffffffcc; }
+    .now-col li .when { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--rust); letter-spacing: .06em; padding-top: 3px; }
+    .now-col:last-child li .when { color: var(--ochre); }
+    .now-col li em { font-family: 'Newsreader', serif; font-size: 16px; color: var(--navy); font-style: italic; }
+    .now-col:last-child li em { color: #ffffffee; }
+
+    /* ─── contact form ─── */
+    .contact-section { background: var(--paperDeep); padding: 64px 48px; border-top: 1px solid #0B227533; display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: start; }
+    .contact-left h2 { font-family: 'Newsreader', serif; font-size: 52px; color: var(--navy); font-weight: 400; line-height: 1; margin-bottom: 16px; letter-spacing: -.02em; }
+    .contact-left h2 em { font-style: italic; color: var(--rust); }
+    .contact-left p { font-size: 14px; line-height: 1.7; color: #171614cc; margin-bottom: 24px; }
+    .contact-left .contact-links { display: flex; flex-direction: column; gap: 8px; }
+    .contact-left .contact-links a { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--navy); text-decoration: none; letter-spacing: .04em; transition: color .15s; display: flex; align-items: center; gap: 8px; }
+    .contact-left .contact-links a::before { content: "→"; color: var(--rust); }
+    .contact-left .contact-links a:hover { color: var(--rust); }
+    .contact-form { display: flex; flex-direction: column; gap: 16px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-field { display: flex; flex-direction: column; gap: 6px; }
+    .form-field label { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: #17161466; }
+    .form-field input, .form-field textarea, .form-field select {
+      font-family: 'Inter', sans-serif; font-size: 14px; color: var(--ink);
+      background: var(--paper); border: 1px solid #0B227522;
+      padding: 12px 14px; outline: none; resize: none;
+      transition: border-color .2s;
+      -webkit-appearance: none;
+    }
+    .form-field input:focus, .form-field textarea:focus, .form-field select:focus { border-color: var(--navy); }
+    .form-field textarea { min-height: 120px; }
+    .form-submit {
+      font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: .1em;
+      padding: 14px 28px; background: var(--navy); color: var(--paper);
+      border: none; cursor: pointer; align-self: flex-start;
+      transition: background .2s, transform .15s;
+    }
+    .form-submit:hover { background: var(--navyDeep); transform: translateY(-1px); }
+    .form-submit:disabled { opacity: .6; cursor: not-allowed; transform: none; }
+    .form-notice { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--sage); letter-spacing: .06em; display: none; }
+    .form-notice.show { display: block; }
+
+    /* ─── footer ─── */
+    footer { background: var(--paperDeep); padding: 32px 48px; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 32px; border-top: 1px solid #0B227533; }
+    footer .lab { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #17161466; margin-bottom: 10px; }
+    footer a { font-size: 13px; color: #171614cc; text-decoration: none; display: block; padding: 3px 0; transition: color .15s; }
+    footer a:hover { color: var(--navy); }
+    footer .colophon { margin-top: 24px; padding-top: 14px; border-top: 1px solid #0B227533; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #17161488; letter-spacing: .06em; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; grid-column: 1 / -1; }
+
+    /* ─── lightbox ─── */
+    .lightbox {
+      position: fixed; inset: 0; background: #000000ee; z-index: 999;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none; transition: opacity .3s;
+    }
+    .lightbox.open { opacity: 1; pointer-events: all; }
+    .lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; display: block; }
+    .lightbox-close {
+      position: absolute; top: 24px; right: 32px; font-family: 'JetBrains Mono', monospace;
+      font-size: 12px; color: #ffffff88; letter-spacing: .1em; cursor: pointer;
+      background: none; border: none; transition: color .2s;
+    }
+    .lightbox-close:hover { color: #fff; }
+    .lightbox-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      font-family: 'JetBrains Mono', monospace; font-size: 20px;
+      color: #ffffff55; background: none; border: none; cursor: pointer;
+      padding: 16px; transition: color .2s;
+    }
+    .lightbox-nav:hover { color: #fff; }
+    .lightbox-prev { left: 16px; }
+    .lightbox-next { right: 16px; }
+    .lightbox-caption { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #ffffff66; letter-spacing: .08em; text-align: center; white-space: nowrap; }
+
+    /* ─── back to top ─── */
+    .back-top {
+      position: fixed; bottom: 32px; right: 32px; z-index: 50;
+      width: 40px; height: 40px; background: var(--navy); color: var(--paper);
+      border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;
+      font-size: 18px; opacity: 0; transform: translateY(12px);
+      transition: opacity .3s, transform .3s;
+    }
+    .back-top.show { opacity: 1; transform: translateY(0); }
+    .back-top:hover { background: var(--navyDeep); }
+
+    /* ─── responsive ─── */
+    @media (max-width: 900px) {
+      .nav { padding: 16px 24px; }
+      .nav .brand .role { display: none; }
+      .nav .links { display: none; }
+      .nav .live { display: none; }
+      .hamburger { display: flex; }
+      .hero { grid-template-columns: 1fr; padding: 40px 24px 32px; }
+      .hero .right { display: none; }
+      .meter { grid-template-columns: repeat(3, 1fr); }
+      .meter > div:nth-child(3) { border-right: 0; }
+      .meter > div:nth-child(4), .meter > div:nth-child(5) { border-top: 1px solid #0B227522; }
+      .sec-h { grid-template-columns: 1fr; padding: 40px 24px 16px; }
+      .sec-h .ix, .sec-h .desc { display: none; }
+      .feature { grid-template-columns: 1fr; }
+      .feature .photo { min-height: 280px; }
+      .before-after { grid-template-columns: 1fr; }
+      .ba-cell { border-right: 0; border-bottom: 1px solid #0B227522; }
+      .app-strip { grid-template-columns: repeat(2, 1fr); }
+      .essays-row { grid-template-columns: 1fr; }
+      .essay { border-right: 0; border-bottom: 1px solid #0B227522; }
+      .practice { grid-template-columns: 1fr; }
+      .practice > div { border-right: 0; border-bottom: 1px solid #0B227522; }
+      .now-section { grid-template-columns: 1fr; }
+      .now-col { border-right: 0; border-bottom: 1px solid #0B227522; }
+      .contact-section { grid-template-columns: 1fr; gap: 36px; padding: 40px 24px; }
+      .form-row { grid-template-columns: 1fr; }
+      footer { grid-template-columns: 1fr 1fr; padding: 32px 24px; }
+      .spm-band { padding: 28px 24px; }
+      .spm-band .spm-head { flex-direction: column; gap: 4px; }
+      .back-top { bottom: 20px; right: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── LIGHTBOX ─── -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <button class="lightbox-close" id="lbClose">ESC · CLOSE</button>
+  <button class="lightbox-nav lightbox-prev" id="lbPrev">‹</button>
+  <img id="lbImg" src="" alt="" />
+  <button class="lightbox-nav lightbox-next" id="lbNext">›</button>
+  <div class="lightbox-caption" id="lbCaption"></div>
+</div>
+
+<!-- ─── MOBILE MENU ─── -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMobile()">Home</a>
+  <a href="#projects" onclick="closeMobile()"><em>Projects</em></a>
+  <a href="#writing" onclick="closeMobile()">Writing</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#now" onclick="closeMobile()">Now</a>
+  <a href="#contact" onclick="closeMobile()"><em>Contact</em></a>
+  <div class="m-contact">aufaariffin@gmail.com</div>
+</div>
+
+<!-- ─── BACK TO TOP ─── -->
+<button class="back-top" id="backTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<div class="site">
+
+  <!-- ─── NAV ─── -->
+  <nav class="nav" id="mainNav">
+    <a href="#home" class="brand">
+      <div class="mark">A</div>
+      <div class="name">Aufa <em>Eizdihar</em></div>
+      <div class="role">student / consultant / essayist</div>
+    </a>
+    <div class="links">
+      <a href="#home" class="nav-link on" data-section="home">Home</a>
+      <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+      <a href="#writing" class="nav-link" data-section="writing">Writing</a>
+      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+      <a href="#now" class="nav-link" data-section="now">Now</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    </div>
+    <div class="live"><span class="dot"></span>open · internships 2026</div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── TICKER ─── -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span><em>STATUS</em>seeking internship · 2026</span>
+      <span><em>BUILDING</em>VTOL drone · body &amp; wind tunnel complete</span>
+      <span><em>WRITING</em>EVs in Malaysia · QR codes in South East Asia</span>
+      <span><em>SHIPPED</em>RM 250,000 gym refurbishment · featured in The Star</span>
+      <span><em>APP</em>FlashShare · Anki-style flashcards for Malaysian students</span>
+      <span><em>CERTIFIED</em>PCEP Python Programmer · English C1</span>
+      <span><em>SPM</em>10 A's · Kolej Yayasan Saad Melaka · 2025</span>
+      <span><em>STATUS</em>seeking internship · 2026</span>
+      <span><em>BUILDING</em>VTOL drone · body &amp; wind tunnel complete</span>
+      <span><em>WRITING</em>EVs in Malaysia · QR codes in South East Asia</span>
+      <span><em>SHIPPED</em>RM 250,000 gym refurbishment · featured in The Star</span>
+      <span><em>APP</em>FlashShare · Anki-style flashcards for Malaysian students</span>
+      <span><em>CERTIFIED</em>PCEP Python Programmer · English C1</span>
+      <span><em>SPM</em>10 A's · Kolej Yayasan Saad Melaka · 2025</span>
+    </div>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="home">
+    <div class="reveal">
+      <div class="eyebrow">Post-SPM · Selangor, Malaysia · Seeking Internship 2026</div>
+      <h1>
+        <span class="ix">№ 00 —</span><span id="heroType"></span><span class="type-cursor">|</span>
+      </h1>
+      <div class="hand-note"><span class="arrow">↘</span> shipping since 17</div>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">View work →</a>
+        <a href="about.html" class="btn-outline">About me →</a>
+        <a href="#contact" class="btn-outline">Get in touch</a>
+        <a href="https://www.linkedin.com/in/aufaeizdihar" target="_blank" rel="noopener" class="btn-outline">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="right reveal reveal-delay-2">
+      <div class="portrait" data-lb="images/portrait.jpeg" data-caption="Aufa Eizdihar · Selangor, 2026">
+        <img src="images/portrait.jpeg" alt="Aufa Eizdihar" />
+      </div>
+      <div class="portrait-cap">
+        <span>FILED · SELANGOR</span>
+        <em>Aufa, at work.</em>
+        <span>2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── METER ─── -->
+  <div class="meter reveal">
+    <div>
+      <div class="lab">Project Value</div>
+      <div class="val"><em>RM 250K+</em></div>
+      <div class="sub">largest in KYS history</div>
+    </div>
+    <div>
+      <div class="lab">SPM Results</div>
+      <div class="val"><em>10</em> A's</div>
+      <div class="sub">incl. 2× A+ · CEFR C1</div>
+    </div>
+    <div>
+      <div class="lab">Projects</div>
+      <div class="val"><em>05</em> built</div>
+      <div class="sub">gym · app · drone · essays</div>
+    </div>
+    <div>
+      <div class="lab">Achievement</div>
+      <div class="val">MUN <em>Best</em></div>
+      <div class="sub">Asia World MUN 10</div>
+    </div>
+    <div>
+      <div class="lab">Status</div>
+      <div class="val">Open</div>
+      <div class="sub">internship · 2026</div>
+    </div>
+  </div>
+
+  <!-- ════════ PROJECTS ════════ -->
+  <div class="sec-h reveal" id="projects">
+    <div class="ix">/ 01 — projects</div>
+    <div><h2>Work that <em>shipped</em>.</h2></div>
+    <div class="desc">Real deliverables under real constraints — budgets managed, suppliers negotiated, institutions changed.</div>
+  </div>
+
+  <!-- Gym Refurbishment -->
+  <div class="feature reveal">
+    <div class="photo">
+      <img src="images/gym_team.jpeg" alt="KYS Gymnasium refurbishment team" data-lb="images/gym_team.jpeg" data-caption="P-001 · KYS Gymnasium · The team, 2025" />
+      <div class="stamp">P-001 · INFRASTRUCTURE</div>
+      <div class="corner-cap">covered by The Star</div>
+    </div>
+    <div class="copy">
+      <div>
+        <div class="kicker">Flagship project · 2023–25</div>
+        <h3>A student-led gymnasium,<br><em>rebuilt from scratch</em>.</h3>
+        <p class="lede">Spearheaded the planning and execution of an RM250,000+ gym redevelopment at Kolej Yayasan Saad — the largest student-led infrastructure project in the college's history. From budgeting and supplier sourcing to institutional sign-off, every decision ran through one student.</p>
+        <div class="specs">
+          <div><span class="k">project budget</span><br><span class="v">RM 250,000+</span></div>
+          <div><span class="k">timeline</span><br><span class="v">2023 – 2025</span></div>
+          <div><span class="k">scope</span><br><span class="v">fully student-led</span></div>
+          <div><span class="k">media</span><br><span class="v">The Star · national</span></div>
+        </div>
+      </div>
+      <a class="cta" href="https://www.thestar.com.my/news/education/2025/11/30/form-five-boys-lead-gym-revamp" target="_blank" rel="noopener">Read in The Star →</a>
+    </div>
+  </div>
+
+  <div class="before-after reveal">
+    <div class="ba-cell" data-lb="images/gym_before.jpeg" data-caption="BEFORE · 2023 — The old gym">
+      <img src="images/gym_before.jpeg" alt="Gym before" />
+      <div class="ba-label">BEFORE · 2023</div>
+    </div>
+    <div class="ba-cell" data-lb="images/gym_during.jpeg" data-caption="DURING · Installation in progress">
+      <img src="images/gym_during.jpeg" alt="Gym during installation" />
+      <div class="ba-label">DURING · INSTALLATION</div>
+    </div>
+    <div class="ba-cell" data-lb="images/gym_after.jpeg" data-caption="AFTER · 2025 — Completed gymnasium">
+      <img src="images/gym_after.jpeg" alt="Gym after" />
+      <div class="ba-label">AFTER · 2025</div>
+    </div>
+  </div>
+
+  <!-- FlashShare -->
+  <div class="sec-h reveal">
+    <div class="ix">/ 01b — software</div>
+    <div><h2>FlashShare — <em>study smarter</em>.</h2></div>
+    <div class="desc">An Anki-style flashcard app designed for Malaysian students — SPM, A-Levels, AUSMAT, STPM.</div>
+  </div>
+  <div class="feature reveal">
+    <div class="photo">
+      <img src="images/fs1.jpeg" alt="FlashShare app — home feed" data-lb="images/fs1.jpeg" data-caption="FlashShare · Home feed — Past Papers + daily cards" />
+      <div class="stamp">P-002 · APP · EDUCATION</div>
+      <div class="corner-cap">built for Malaysia</div>
+    </div>
+    <div class="copy">
+      <div>
+        <div class="kicker">Product design · 2026</div>
+        <h3>Flashcards, rebuilt for<br><em>Malaysian students</em>.</h3>
+        <p class="lede">FlashShare is an Anki-inspired flashcard platform built specifically for the Malaysian exam system. Covers SPM, A-Levels, AUSMAT, and STPM — with shared decks, spaced repetition, a built-in Past Papers library, and a marketplace for premium curated decks.</p>
+        <div class="specs">
+          <div><span class="k">type</span><br><span class="v">Education App</span></div>
+          <div><span class="k">target</span><br><span class="v">SPM · A-Levels · AUSMAT</span></div>
+          <div><span class="k">method</span><br><span class="v">Spaced repetition</span></div>
+          <div><span class="k">status</span><br><span class="v">In development</span></div>
+        </div>
+      </div>
+      <a class="cta" href="#contact">Interested? Get in touch →</a>
+    </div>
+  </div>
+
+  <div class="app-strip reveal">
+    <div class="app-cell" data-lb="images/fs1.jpeg" data-caption="FlashShare · Home — Past Papers + due cards">
+      <img src="images/fs1.jpeg" alt="FlashShare — Home feed" />
+      <div class="screen-label">Home · Past Papers</div>
+    </div>
+    <div class="app-cell" data-lb="images/fs2.jpeg" data-caption="FlashShare · Study mode — spaced repetition">
+      <img src="images/fs2.jpeg" alt="FlashShare — Study mode" />
+      <div class="screen-label">Study · Spaced repetition</div>
+    </div>
+    <div class="app-cell" data-lb="images/fs3.jpeg" data-caption="FlashShare · Library — your decks">
+      <img src="images/fs3.jpeg" alt="FlashShare — Library" />
+      <div class="screen-label">Library · Your decks</div>
+    </div>
+    <div class="app-cell" data-lb="images/fs4.jpeg" data-caption="FlashShare · Marketplace — premium decks">
+      <img src="images/fs4.jpeg" alt="FlashShare — Marketplace" />
+      <div class="screen-label">Marketplace · Premium decks</div>
+    </div>
+  </div>
+
+  <!-- K-NETT -->
+  <div class="sec-h reveal">
+    <div class="ix">/ 01c — software</div>
+    <div><h2>K-NETT — <em>the student app</em>.</h2></div>
+    <div class="desc">Python-based administration platform built to replace paper-based prefect operations at KYS.</div>
+  </div>
+  <div class="feature reveal">
+    <div class="photo">
+      <div class="img-slot">
+        <div class="ph-inner">K-NETT SCREENSHOT<br>— coming soon —</div>
+      </div>
+      <div class="stamp">P-003 · SOFTWARE · PYTHON</div>
+      <div class="corner-cap">120% better flow</div>
+    </div>
+    <div class="copy">
+      <div>
+        <div class="kicker">Student app · 2024</div>
+        <h3>Administration,<br><em>simplified in Python</em>.</h3>
+        <p class="lede">Designed and developed K-NETT, a Python-based student administration platform that streamlined daily prefect operations, reporting, and internal communication across a 90-member board. Beta version deployed school-wide.</p>
+        <div class="specs">
+          <div><span class="k">language</span><br><span class="v">Python</span></div>
+          <div><span class="k">users</span><br><span class="v">90-member board</span></div>
+          <div><span class="k">impact</span><br><span class="v">+120% coordination</span></div>
+          <div><span class="k">status</span><br><span class="v">Beta · deployed</span></div>
+        </div>
+      </div>
+      <a class="cta" href="mailto:aufaariffin@gmail.com?subject=K-NETT%20enquiry">Request a demo →</a>
+    </div>
+  </div>
+
+  <!-- VTOL Drone -->
+  <div class="sec-h reveal">
+    <div class="ix">/ 01d — aerospace</div>
+    <div><h2>VTOL drone — <em>body complete</em>.</h2></div>
+    <div class="desc">Full airframe designed in Fusion 360. Wind tunnel simulations done via AirShaper.</div>
+  </div>
+  <div class="feature reveal">
+    <div class="photo">
+      <img src="images/vtol_airshaper.jpeg" alt="VTOL drone wind tunnel simulation" data-lb="images/vtol_airshaper.jpeg" data-caption="P-004 · VTOL Drone — AirShaper CFD simulation · 30.0 kph" />
+      <div class="stamp">P-004 · AEROSPACE · CFD</div>
+      <div class="corner-cap">sims complete</div>
+    </div>
+    <div class="copy">
+      <div>
+        <div class="kicker">Active build · 2026</div>
+        <h3>A VTOL drone,<br><em>designed from scratch</em>.</h3>
+        <p class="lede">Designed a full VTOL (vertical take-off and landing) drone airframe in Fusion 360 and ran wind tunnel simulations via AirShaper to validate aerodynamic performance. Pressure and streamline analysis complete. Currently moving into propulsion and avionics integration.</p>
+        <div class="specs">
+          <div><span class="k">CAD tool</span><br><span class="v">Fusion 360</span></div>
+          <div><span class="k">simulation</span><br><span class="v">AirShaper · CFD</span></div>
+          <div><span class="k">airframe</span><br><span class="v">Body design done</span></div>
+          <div><span class="k">next</span><br><span class="v">Propulsion · avionics</span></div>
+        </div>
+      </div>
+      <a class="cta" href="https://app.airshaper.com/simulations/sim_dx64pnW36WvfpWMjBgVm78Ge" target="_blank" rel="noopener">View simulation on AirShaper →</a>
+    </div>
+  </div>
+
+  <!-- ════════ WRITING ════════ -->
+  <div class="sec-h reveal" id="writing">
+    <div class="ix">/ 02 — writing</div>
+    <div><h2>Economics <em>essays</em><br>&amp; ongoing <em class="accent">research</em>.</h2></div>
+    <div class="desc">Long-form economics writing in progress. Focused on Southeast Asian markets and technology adoption.</div>
+    <a href="essays.html" class="btn-primary" style="grid-column:1/-1;display:block;text-align:center;padding:18px 48px;margin-top:8px;letter-spacing:.1em;">Open essays journal →</a>
+  </div>
+
+  <div class="essays-row">
+    <div class="essay reveal" onclick="openLightbox('images/ev_essay.jpg','E-001 · EV Adoption in Malaysia')">
+      <div class="photo">
+        <img src="images/ev_essay.jpg" alt="EV adoption in Malaysia" />
+        <div class="ix-tag">E-001</div>
+      </div>
+      <div class="meta-line"><span class="topic">/ economics · transport</span><span>in progress · 2026</span></div>
+      <h4>EV adoption in <em>Malaysia</em></h4>
+      <p>Examining the conditions, barriers, and policy levers shaping electric vehicle uptake in Malaysia — infrastructure gaps, subsidy design, and shifting consumer behaviour.</p>
+      <span class="status-tag wip">IN PROGRESS</span>
+    </div>
+    <div class="essay reveal reveal-delay-1" onclick="openLightbox('images/qr_essay.jpg','E-002 · QR Codes across South East Asia')">
+      <div class="photo">
+        <img src="images/qr_essay.jpg" alt="QR codes in South East Asia" />
+        <div class="ix-tag">E-002</div>
+      </div>
+      <div class="meta-line"><span class="topic">/ economics · fintech</span><span>in progress · 2026</span></div>
+      <h4>QR codes <em>across</em> South East Asia</h4>
+      <p>Mapping the rapid adoption of QR-based payment infrastructure across SEA markets — and what it reveals about leapfrog economics, financial inclusion, and the death of cash.</p>
+      <span class="status-tag wip">IN PROGRESS</span>
+    </div>
+    <div class="essay reveal reveal-delay-2" onclick="openLightbox('images/vtol_cad.jpeg','B-001 · VTOL Drone — Fusion 360 CAD model')">
+      <div class="photo">
+        <img src="images/vtol_cad.jpeg" alt="VTOL drone Fusion 360 design" />
+        <div class="ix-tag">B-001</div>
+      </div>
+      <div class="meta-line"><span class="topic">/ aerospace · engineering</span><span>active build · 2026</span></div>
+      <h4>VTOL drone — <em>design log</em></h4>
+      <p>Notes from building a VTOL drone — design decisions in Fusion 360, what the wind tunnel numbers said, and what I'd change on the next iteration.</p>
+      <span class="status-tag done">WIND TUNNEL · COMPLETE</span>
+    </div>
+  </div>
+
+  <!-- ════════ SKILLS ════════ -->
+  <div class="sec-h reveal" id="skills">
+    <div class="ix">/ 03 — skills</div>
+    <div><h2>What I <em>bring</em>.</h2></div>
+    <div class="desc">Three domains of capability, built through doing — not coursework.</div>
+  </div>
+
+  <div class="practice">
+    <div class="reveal">
+      <div class="num"><em>01.</em></div>
+      <h4>Project <em>execution</em></h4>
+      <p>Led an RM250,000 infrastructure build from conception to completion at 17 — budgeting, supplier negotiation, stakeholder alignment, and timeline management under real constraints. Recognised in national media.</p>
+      <div class="tags">
+        <span>Project Management</span><span>Stakeholder Negotiation</span>
+        <span>Trade-off Analysis</span><span>Budgeting</span><span>Contract Review</span>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div class="num"><em>02.</em></div>
+      <h4>Technical <em>building</em></h4>
+      <p>Python programmer (PCEP certified) who ships real tools. Designing a VTOL drone from scratch — Fusion 360 airframe, CFD simulations done. Built a school-wide Python app used by 90 people. Now building a flashcard platform.</p>
+      <div class="tags">
+        <span>Python</span><span>Fusion 360</span><span>CFD · AirShaper</span>
+        <span>App Development</span><span>Systems Design</span>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-2">
+      <div class="num"><em>03.</em></div>
+      <h4>Communication <em>&amp; leadership</em></h4>
+      <p>Most Outstanding Delegate at Asia World MUN 10. Served on a 90-member British-style prefect system. Writes economics essays on SEA markets. Comfortable in front of an audience or in a boardroom.</p>
+      <div class="tags">
+        <span>Public Speaking</span><span>MUN Negotiation</span>
+        <span>Economics Writing</span><span>U-17 Rugby Secretary</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── SPM BAND ─── -->
+  <div class="spm-band reveal">
+    <div class="spm-head">
+      <h3>SPM 2025 — <em>10 A's</em>. Kolej Yayasan Saad Melaka.</h3>
+      <div class="meta">SIJIL PELAJARAN MALAYSIA · 2025</div>
+    </div>
+    <div class="spm-extras">
+      10 subjects: <span>10 A's</span> &nbsp;·&nbsp;
+      LCCI: <span>Pass with Merit</span> &nbsp;·&nbsp;
+      CEFR English: <span>C1</span> &nbsp;·&nbsp;
+      Accounting: <span>ACCA-FIA-FA1 Exemption Eligible</span>
+    </div>
+  </div>
+
+  <!-- ─── NOW ─── -->
+  <div class="now-section" id="now">
+    <div class="now-col reveal">
+      <h3>What I'm <em>doing now</em>.</h3>
+      <ul>
+        <li><span class="when">MAY '26</span><div>Building a <em>VTOL drone</em> — body designed in Fusion 360, wind tunnel sims done on AirShaper. Moving into avionics.</div></li>
+        <li><span class="when">MAY '26</span><div>Writing an economics essay on <em>EV adoption in Malaysia</em> — policy levers, infrastructure, and consumer behaviour.</div></li>
+        <li><span class="when">MAY '26</span><div>Writing on <em>QR code infrastructure</em> across South East Asia and what it reveals about leapfrog economics.</div></li>
+        <li><span class="when">MAY '26</span><div>Building <em>FlashShare</em> — an Anki-style flashcard app for Malaysian students (SPM, A-Levels, AUSMAT, STPM).</div></li>
+      </ul>
+    </div>
+    <div class="now-col reveal reveal-delay-1">
+      <h3>Education <em>&amp; record</em>.</h3>
+      <ul>
+        <li><span class="when">2025</span><div><em>SPM — 10 A's</em> · Kolej Yayasan Saad Melaka. 2× A+, CEFR English C1, ACCA exemption.</div></li>
+        <li><span class="when">2024</span><div><em>PCEP Certified</em> Python Programmer · PCEP-30-02 · ID: YsH2.0sBz.Zna8</div></li>
+        <li><span class="when">2024</span><div><em>Most Outstanding Delegate</em> · Asia World Model United Nations 10</div></li>
+        <li><span class="when">2023–25</span><div>Prefectorial Board Member <em>&amp; U-17 Rugby Secretary</em> · KYS · 90-member board</div></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ─── CONTACT ─── -->
+  <div class="contact-section" id="contact">
+    <div class="contact-left reveal">
+      <h2>Get in <em>touch</em>.</h2>
+      <p>For internship inquiries, collaboration, or just a conversation about aerospace, economics, or systems — write below. I reply within a day, usually in the morning.</p>
+      <div class="contact-links">
+        <a href="mailto:aufaariffin@gmail.com">aufaariffin@gmail.com</a>
+        <a href="https://www.linkedin.com/in/aufaeizdihar" target="_blank" rel="noopener">linkedin.com/in/aufaeizdihar</a>
+        <a href="https://www.thestar.com.my/news/education/2025/11/30/form-five-boys-lead-gym-revamp" target="_blank" rel="noopener">The Star feature</a>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-field">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="fsubject">Subject</label>
+          <select id="fsubject" name="subject">
+            <option value="internship">Internship inquiry</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="flashshare">FlashShare</option>
+            <option value="other">General</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="fmsg">Message</label>
+          <textarea id="fmsg" name="message" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <button type="submit" class="form-submit" id="formSubmit">SEND MESSAGE</button>
+        <div class="form-notice" id="formNotice">✓ Opening your mail client…</div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div>
+      <div class="lab">Work</div>
+      <a href="#projects">→ Projects</a>
+      <a href="#writing">→ Writing</a>
+      <a href="#skills">→ Skills</a>
+    </div>
+    <div>
+      <div class="lab">About</div>
+      <a href="#now">→ What I'm doing now</a>
+      <a href="https://www.linkedin.com/in/aufaeizdihar" target="_blank" rel="noopener">→ LinkedIn</a>
+      <a href="https://www.thestar.com.my/news/education/2025/11/30/form-five-boys-lead-gym-revamp" target="_blank" rel="noopener">→ The Star feature</a>
+    </div>
+    <div>
+      <div class="lab">Contact</div>
+      <a href="mailto:aufaariffin@gmail.com">→ aufaariffin@gmail.com</a>
+    </div>
+    <div>
+      <div class="lab">Channels</div>
+      <a href="https://www.linkedin.com/in/aufaeizdihar" target="_blank" rel="noopener">→ LinkedIn</a>
+      <a href="mailto:aufaariffin@gmail.com">→ Email</a>
+    </div>
+    <div class="colophon">
+      <span>© MMXXVI · MUHAMMAD AUFA EIZDIHAR · SELANGOR, MALAYSIA</span>
+      <span>NEWSREADER · INTER · JETBRAINS MONO · CAVEAT</span>
+      <span>v4.0 · ATLAS BUILD · 2026-05-10</span>
+      <span id="siteViewsRow" style="display:none">·&nbsp;<span id="viewCount">—</span>&nbsp;PROFILE VIEWS</span>
+    </div>
+  </footer>
+
+</div><!-- /.site -->
+
+<script>
+  /* ── scroll spy ── */
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const nav = document.getElementById('mainNav');
+
+  const spyObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('on'));
+        const active = document.querySelector(`.nav-link[data-section="${e.target.id}"]`);
+        if (active) active.classList.add('on');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+
+  document.querySelectorAll('#home,#projects,#writing,#skills,#now,#contact')
+    .forEach(s => spyObserver.observe(s));
+
+  /* ── nav shadow on scroll ── */
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+    document.getElementById('backTop').classList.toggle('show', window.scrollY > 400);
+  }, { passive: true });
+
+  /* ── reveal on scroll ── */
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  /* ── mobile menu ── */
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  function closeMobile() {
+    hamburger.classList.remove('open');
+    mobileMenu.style.display = 'none';
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = hamburger.classList.toggle('open');
+    if (isOpen) {
+      mobileMenu.style.display = 'flex';
+      requestAnimationFrame(() => mobileMenu.classList.add('open'));
+      document.body.style.overflow = 'hidden';
+    } else {
+      closeMobile();
+    }
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      closeMobile();
+      closeLightbox();
+    }
+  });
+
+  /* ── lightbox ── */
+  const lightbox = document.getElementById('lightbox');
+  const lbImg    = document.getElementById('lbImg');
+  const lbCap    = document.getElementById('lbCaption');
+
+  let lbItems = [];
+  let lbIndex = 0;
+
+  function buildLbItems() {
+    lbItems = [...document.querySelectorAll('[data-lb]')].map(el => ({
+      src: el.dataset.lb,
+      cap: el.dataset.caption || ''
+    }));
+  }
+
+  function openLightbox(src, cap) {
+    buildLbItems();
+    lbIndex = lbItems.findIndex(i => i.src === src);
+    if (lbIndex < 0) { lbIndex = 0; lbItems.unshift({ src, cap }); }
+    showLbItem();
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function showLbItem() {
+    const item = lbItems[lbIndex];
+    lbImg.src = item.src;
+    lbCap.textContent = item.cap;
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('lbClose').addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+
+  document.getElementById('lbPrev').addEventListener('click', () => {
+    lbIndex = (lbIndex - 1 + lbItems.length) % lbItems.length;
+    showLbItem();
+  });
+  document.getElementById('lbNext').addEventListener('click', () => {
+    lbIndex = (lbIndex + 1) % lbItems.length;
+    showLbItem();
+  });
+
+  /* wire all lightbox triggers */
+  document.querySelectorAll('[data-lb]').forEach(el => {
+    el.style.cursor = 'zoom-in';
+    el.addEventListener('click', () => openLightbox(el.dataset.lb, el.dataset.caption || ''));
+  });
+
+  /* ── contact form ── */
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name    = document.getElementById('fname').value.trim();
+    const email   = document.getElementById('femail').value.trim();
+    const subject = document.getElementById('fsubject').value;
+    const msg     = document.getElementById('fmsg').value.trim();
+
+    if (!name || !email || !msg) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+
+    const subjectMap = {
+      internship: 'Internship Inquiry',
+      collaboration: 'Collaboration',
+      flashshare: 'FlashShare',
+      other: 'General Inquiry'
+    };
+
+    const mailSubject = encodeURIComponent(`[Portfolio] ${subjectMap[subject]} — ${name}`);
+    const mailBody    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${msg}`);
+    const mailto      = `mailto:aufaariffin@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+
+    const btn    = document.getElementById('formSubmit');
+    const notice = document.getElementById('formNotice');
+    btn.disabled = true;
+    btn.textContent = 'OPENING…';
+    notice.classList.add('show');
+
+    window.location.href = mailto;
+
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.textContent = 'SEND MESSAGE';
+      notice.classList.remove('show');
+      this.reset();
+    }, 3000);
+  });
+
+  /* ── keyboard lightbox nav ── */
+  document.addEventListener('keydown', e => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'ArrowRight') { lbIndex = (lbIndex + 1) % lbItems.length; showLbItem(); }
+    if (e.key === 'ArrowLeft')  { lbIndex = (lbIndex - 1 + lbItems.length) % lbItems.length; showLbItem(); }
+  });
+
+  /* ── hero typewriter ── */
+  (function () {
+    const heroHTML = 'Leading complex projects.<br><em>Writing on markets,<br>systems</em> <span class="amp">&</span> <em>machines</em>.';
+    const el     = document.getElementById('heroType');
+    const cursor = el && el.nextElementSibling;
+    if (!el) return;
+
+    // Tokenise: full HTML tags and entities are atomic; regular chars type one by one
+    const tokens = [];
+    let i = 0;
+    while (i < heroHTML.length) {
+      if (heroHTML[i] === '<') {
+        const end = heroHTML.indexOf('>', i);
+        tokens.push({ meta: true,  val: heroHTML.slice(i, end + 1) });
+        i = end + 1;
+      } else if (heroHTML[i] === '&') {
+        const end = heroHTML.indexOf(';', i);
+        if (end !== -1 && end - i < 9) {
+          tokens.push({ meta: true,  val: heroHTML.slice(i, end + 1) });
+          i = end + 1;
+        } else {
+          tokens.push({ meta: false, val: heroHTML[i++] });
+        }
+      } else {
+        tokens.push({ meta: false, val: heroHTML[i++] });
+      }
+    }
+
+    let out = '';
+    let idx = 0;
+    const SPEED = 38; // ms per character
+
+    function tick() {
+      if (idx >= tokens.length) {
+        // done — let cursor blink a moment then fade it
+        setTimeout(() => {
+          if (cursor) { cursor.style.animation = 'none'; cursor.style.opacity = '0'; }
+        }, 1800);
+        return;
+      }
+      const t = tokens[idx++];
+      out += t.val;
+      el.innerHTML = out;
+      setTimeout(tick, t.meta ? 0 : SPEED);
+    }
+
+    // Start after a short pause so the page feels settled
+    setTimeout(tick, 520);
+  })();
+
+  /* ── GoatCounter: fetch public view count ──────────────────────────────
+     After signing up at goatcounter.com and enabling "Public stats" in
+     Settings → Site settings, replace YOUR-SUBDOMAIN below.
+     The row stays hidden until a real count loads.
+  ────────────────────────────────────────────────────────────────────── */
+  (function fetchViews() {
+    const subdomain = 'YOUR-SUBDOMAIN'; // ← replace after sign-up
+    if (subdomain === 'YOUR-SUBDOMAIN') return;
+    const today = new Date().toISOString().slice(0, 10);
+    fetch(`https://${subdomain}.goatcounter.com/api/v0/stats/total?start=2026-01-01&end=${today}`, {
+      headers: { 'Accept': 'application/json' }
+    })
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        const total = data && (data.total_hits || data.total);
+        if (total) {
+          document.getElementById('viewCount').textContent = Number(total).toLocaleString();
+          document.getElementById('siteViewsRow').style.display = '';
+        }
+      })
+      .catch(() => {});
+  })();
+</script>
+
+<!-- ── GoatCounter analytics tracker ──────────────────────────────────
+     Replace YOUR-SUBDOMAIN with your goatcounter.com subdomain.
+     This one line tracks every real visit — bots are filtered out.
+──────────────────────────────────────────────────────────────────── -->
+<script data-goatcounter="https://YOUR-SUBDOMAIN.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+</body>
+</html>
