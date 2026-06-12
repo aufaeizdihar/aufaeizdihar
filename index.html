@@ -268,6 +268,14 @@
     .ba-cell:hover img { transform: scale(1.04); filter: brightness(1.03); }
     .ba-cell .ba-label { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, #0B227599); padding: 28px 14px 10px; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--paper); letter-spacing: .1em; text-transform: uppercase; pointer-events: none; }
 
+    /* ─── flashshare logo ─── */
+    .fs-logo {
+      width: 64px; height: 64px;
+      border-radius: 14px;
+      display: block; margin-bottom: 14px;
+      box-shadow: 0 2px 12px #0B227522;
+    }
+
     /* ─── app screenshot strip ─── */
     .app-strip { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid #0B227522; background: var(--paperDeep); }
     .app-strip .app-cell { border-right: 1px solid #0B227522; position: relative; overflow: hidden; cursor: zoom-in; }
@@ -618,7 +626,10 @@
   <!-- FlashShare -->
   <div class="sec-h reveal">
     <div class="ix">/ 01b — software</div>
-    <div><h2>FlashShare — <em>study smarter</em>.</h2></div>
+    <div>
+      <img src="images/flashshare_logo.jpg" alt="FlashShare" class="fs-logo" />
+      <h2>FlashShare — <em>study smarter</em>.</h2>
+    </div>
     <div class="desc">An Anki-style flashcard app designed for Malaysian students — SPM, A-Levels, AUSMAT, STPM.</div>
   </div>
   <div class="feature reveal">
@@ -698,7 +709,7 @@
 
     <a class="press-card" href="https://cemerlang.org/leadership-born-from-empathy-my-asia-world-model-united-nations-experience/" target="_blank" rel="noopener">
       <div class="press-photo">
-        <img src="images/mun.jpeg" alt="Aufa receiving Most Outstanding Delegate award at Asia World MUN 10" />
+        <img src="images/mun.jpg" alt="Aufa receiving Most Outstanding Delegate award at Asia World MUN 10" />
       </div>
       <div class="press-body">
         <div class="press-pub">Cemerlang</div>
