@@ -123,7 +123,7 @@
     @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
     /* ─── hero ─── */
-    .hero { padding: 64px 48px 48px; display: grid; grid-template-columns: 1fr 360px; gap: 48px; align-items: end; border-bottom: 1px solid #0B227522; }
+    .hero { padding: 64px 48px 48px; display: grid; grid-template-columns: 1fr 360px; gap: 48px; align-items: start; border-bottom: 1px solid #0B227522; }
     .hero .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--rust); letter-spacing: .14em; margin-bottom: 20px; display: flex; gap: 12px; align-items: center; }
     .hero .eyebrow::before { content: "§"; font-family: 'Newsreader', serif; font-style: italic; font-size: 16px; }
     .hero h1 { font-family: 'Newsreader', serif; font-size: clamp(60px, 8.5vw, 108px); line-height: .92; color: var(--navy); font-weight: 400; letter-spacing: -.025em; }
@@ -146,7 +146,7 @@
     .hero .hand-note .arrow { display: inline-block; transform: rotate(35deg); margin-right: 6px; }
     .hero .right { display: flex; flex-direction: column; gap: 14px; }
     .hero .portrait { width: 360px; height: 440px; border: 1px solid #0B227533; background: var(--paperDeep); overflow: hidden; cursor: zoom-in; }
-    .hero .portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; transition: transform .4s ease; }
+    .hero .portrait img { width: 100%; height: 100%; object-fit: cover; object-position: right 15%; display: block; transition: transform .4s ease; }
     .hero .portrait:hover img { transform: scale(1.03); }
     .hero .portrait-cap { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #17161488; letter-spacing: .08em; display: flex; justify-content: space-between; }
     .hero .portrait-cap em { font-family: 'Newsreader', serif; font-style: italic; font-size: 12px; color: var(--navy); letter-spacing: 0; }
@@ -207,6 +207,60 @@
     .feature .copy .cta:hover { color: var(--rust); border-bottom-color: var(--rust); }
 
     /* ─── before/after strip ─── */
+    /* ─── press / featured in ─── */
+    .press-row { display: grid; grid-template-columns: repeat(3,1fr); border-bottom: 1px solid #0B227522; }
+    .press-card {
+      display: flex; flex-direction: column;
+      border-right: 1px solid #0B227522;
+      text-decoration: none; color: inherit;
+      transition: background .2s;
+    }
+    .press-card:last-child { border-right: 0; }
+    .press-card:hover { background: var(--paperWarm); }
+    .press-photo {
+      aspect-ratio: 16/9; background: var(--paperDeep);
+      overflow: hidden; position: relative;
+    }
+    .press-photo img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform .4s ease;
+    }
+    .press-card:hover .press-photo img { transform: scale(1.04); }
+    .press-photo .ph-slot {
+      width: 100%; height: 100%; display: flex; align-items: center;
+      justify-content: center; font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; color: #17161444; letter-spacing: .1em;
+    }
+    .press-body { padding: 28px 28px 36px; display: flex; flex-direction: column; flex: 1; }
+    .press-pub {
+      font-family: 'Newsreader', serif; font-size: 22px;
+      color: var(--navy); font-weight: 500; letter-spacing: -.01em;
+      margin-bottom: 4px;
+    }
+    .press-type {
+      font-family: 'JetBrains Mono', monospace; font-size: 9px;
+      color: var(--rust); letter-spacing: .12em;
+      margin-bottom: 20px;
+    }
+    .press-title {
+      font-family: 'Newsreader', serif; font-size: 20px;
+      color: var(--ink); font-weight: 400; line-height: 1.15;
+      letter-spacing: -.01em; margin-bottom: 14px;
+    }
+    .press-title em { font-style: italic; color: var(--navy); }
+    .press-desc {
+      font-size: 13px; line-height: 1.55; color: var(--ink);
+      opacity: .65; flex: 1; margin-bottom: 24px;
+    }
+    .press-cta {
+      font-family: 'JetBrains Mono', monospace; font-size: 11px;
+      letter-spacing: .08em; color: var(--paper);
+      background: var(--navy); padding: 11px 20px;
+      display: inline-block; align-self: flex-start;
+      transition: background .2s;
+    }
+    .press-card:hover .press-cta { background: var(--navyDeep); }
+
     .before-after { display: grid; grid-template-columns: 1fr 1fr 1fr; border-bottom: 1px solid #0B227522; }
     .ba-cell { position: relative; overflow: hidden; aspect-ratio: 4/3; border-right: 1px solid #0B227522; cursor: zoom-in; }
     .ba-cell:last-child { border-right: 0; }
@@ -372,6 +426,9 @@
       .feature { grid-template-columns: 1fr; }
       .feature .photo { min-height: 280px; }
       .before-after { grid-template-columns: 1fr; }
+      .press-row { grid-template-columns: 1fr; }
+      .press-card { border-right: 0; border-bottom: 1px solid #0B227522; }
+      .press-card:last-child { border-bottom: 0; }
       .ba-cell { border-right: 0; border-bottom: 1px solid #0B227522; }
       .app-strip { grid-template-columns: repeat(2, 1fr); }
       .essays-row { grid-template-columns: 1fr; }
@@ -605,34 +662,53 @@
     </div>
   </div>
 
-  <!-- K-NETT -->
+  <!-- PRESS / FEATURED IN -->
   <div class="sec-h reveal">
-    <div class="ix">/ 01c — software</div>
-    <div><h2>K-NETT — <em>the student app</em>.</h2></div>
-    <div class="desc">Python-based administration platform built to replace paper-based prefect operations at KYS.</div>
+    <div class="ix">/ 01c — press</div>
+    <div><h2>Featured <em>in print</em><br>&amp; online.</h2></div>
+    <div class="desc">Work and writing picked up by national media, regional journals, and independent publications.</div>
   </div>
-  <div class="feature reveal">
-    <div class="photo">
-      <div class="img-slot">
-        <div class="ph-inner">K-NETT SCREENSHOT<br>— coming soon —</div>
+  <div class="press-row reveal">
+
+    <a class="press-card" href="https://open.substack.com/pub/theaseanfrontier/p/malaysias-electric-moment?r=8h7c8t&utm_campaign=post-expanded-share&utm_medium=web" target="_blank" rel="noopener">
+      <div class="press-photo">
+        <img src="images/ev_essay.jpg" alt="EV adoption in Malaysia" />
       </div>
-      <div class="stamp">P-003 · SOFTWARE · PYTHON</div>
-      <div class="corner-cap">120% better flow</div>
-    </div>
-    <div class="copy">
-      <div>
-        <div class="kicker">Student app · 2024</div>
-        <h3>Administration,<br><em>simplified in Python</em>.</h3>
-        <p class="lede">Designed and developed K-NETT, a Python-based student administration platform that streamlined daily prefect operations, reporting, and internal communication across a 90-member board. Beta version deployed school-wide.</p>
-        <div class="specs">
-          <div><span class="k">language</span><br><span class="v">Python</span></div>
-          <div><span class="k">users</span><br><span class="v">90-member board</span></div>
-          <div><span class="k">impact</span><br><span class="v">+120% coordination</span></div>
-          <div><span class="k">status</span><br><span class="v">Beta · deployed</span></div>
-        </div>
+      <div class="press-body">
+        <div class="press-pub">The ASEAN Frontier</div>
+        <div class="press-type">Economics Journal · Substack · 2026</div>
+        <h4 class="press-title">The Electrification of <em>Malaysia</em></h4>
+        <p class="press-desc">Malaysia's strategic position in the ASEAN electric vehicle ecosystem — semiconductors, battery services, smart grid, and five policy recommendations.</p>
+        <span class="press-cta">Read article ↗</span>
       </div>
-      <a class="cta" href="mailto:aufaariffin@gmail.com?subject=K-NETT%20enquiry">Request a demo →</a>
-    </div>
+    </a>
+
+    <a class="press-card" href="https://www.thestar.com.my/news/education/2025/11/30/form-five-boys-lead-gym-revamp" target="_blank" rel="noopener">
+      <div class="press-photo">
+        <img src="images/gym_team.jpeg" alt="KYS gym refurbishment team" />
+      </div>
+      <div class="press-body">
+        <div class="press-pub">The Star</div>
+        <div class="press-type">National Newspaper · Malaysia · 2025</div>
+        <h4 class="press-title">Form-five boys <em>lead gym revamp</em></h4>
+        <p class="press-desc">National coverage of the student-led RM250,000 gymnasium refurbishment at Kolej Yayasan Saad — the largest student-led infrastructure project in the college's history.</p>
+        <span class="press-cta">Read article ↗</span>
+      </div>
+    </a>
+
+    <a class="press-card" href="https://cemerlang.org/leadership-born-from-empathy-my-asia-world-model-united-nations-experience/" target="_blank" rel="noopener">
+      <div class="press-photo">
+        <img src="images/mun.jpeg" alt="Aufa receiving Most Outstanding Delegate award at Asia World MUN 10" />
+      </div>
+      <div class="press-body">
+        <div class="press-pub">Cemerlang</div>
+        <div class="press-type">Leadership Publication · 2024</div>
+        <h4 class="press-title">Leadership born <em>from empathy</em></h4>
+        <p class="press-desc">Reflections on representing Malaysia at Asia World Model United Nations 10 — on diplomatic negotiation, empathetic leadership, and what it means to earn Most Outstanding Delegate.</p>
+        <span class="press-cta">Read article ↗</span>
+      </div>
+    </a>
+
   </div>
 
   <!-- VTOL Drone -->
@@ -672,15 +748,15 @@
   </div>
 
   <div class="essays-row">
-    <div class="essay reveal" onclick="openLightbox('images/ev_essay.jpg','E-001 · EV Adoption in Malaysia')">
+    <div class="essay reveal" onclick="window.open('https://open.substack.com/pub/theaseanfrontier/p/malaysias-electric-moment?r=8h7c8t&utm_campaign=post-expanded-share&utm_medium=web','_blank')" style="cursor:pointer">
       <div class="photo">
         <img src="images/ev_essay.jpg" alt="EV adoption in Malaysia" />
         <div class="ix-tag">E-001</div>
       </div>
-      <div class="meta-line"><span class="topic">/ economics · transport</span><span>in progress · 2026</span></div>
-      <h4>EV adoption in <em>Malaysia</em></h4>
-      <p>Examining the conditions, barriers, and policy levers shaping electric vehicle uptake in Malaysia — infrastructure gaps, subsidy design, and shifting consumer behaviour.</p>
-      <span class="status-tag wip">IN PROGRESS</span>
+      <div class="meta-line"><span class="topic">/ economics · transport</span><span>published · 2026</span></div>
+      <h4>The Electrification of <em>Malaysia</em></h4>
+      <p>Malaysia's strategic position in the ASEAN EV ecosystem — semiconductors, battery services, smart grid, and five policy recommendations. Published in <em>The ASEAN Frontier</em>.</p>
+      <span class="status-tag done">PUBLISHED ↗</span>
     </div>
     <div class="essay reveal reveal-delay-1" onclick="openLightbox('images/qr_essay.jpg','E-002 · QR Codes across South East Asia')">
       <div class="photo">
